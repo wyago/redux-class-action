@@ -1,6 +1,6 @@
 {
   "name": "redux-class-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/main.js",
   "devDependencies": {
     "typescript": "2.5.2"
