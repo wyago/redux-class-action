@@ -20,8 +20,8 @@ export class Reset extends Action { }
 
 export const counter = 
     startingFrom({ counter: 10 })
-        .when(Add, (state, action) => { counter: state.counter + action.amount })
-        .when(Reset, (state, action) => { counter: 0 })
+        .when(Add, (state, action) => ({ counter: state.counter + action.amount }))
+        .when(Reset, (state, action) => ({ counter: 0 }))
         .done;
 ```
 
