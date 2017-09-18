@@ -7,7 +7,7 @@ allowing types to be inferred. All together, this lets you use redux actions
 without any code duplication, and with as little boilerplate as possible.
 
 Here's an example of a super simple reducer:
-```
+```javascript
 import { Action, startingFrom } from "redux-class-action";
 
 export class Add extends Action {
