@@ -53,17 +53,3 @@ export function startingFrom<State>(initial: State) {
         when
     };
 }
-
-export class Add extends Action {
-    constructor(public readonly value: number) {
-        super();
-    }
-}
-
-export class Reset extends Action { }
-
-export const counter = 
-    startingFrom(0)
-        .when(Add, (state, action) => state + action.value)
-        .when(Reset, (state, action) => 0)
-        .done;
