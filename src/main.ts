@@ -1,6 +1,6 @@
 /// This middleware converts actions which are classes to simple objects so
 /// that redux will accept them.
-export const classMiddleware = store => next => action => {
+export const classMiddleware = (store: any) => (next: any) => (action: any) => {
     const plain = Object.assign({}, action);
     plain.type = action.type;
     return next(plain);
@@ -18,7 +18,7 @@ export type Reducer<State, Action> =
 
 /// Matches any constructor for the type T. Used only to extract the type of
 /// the constructed item, so we don't actually care about the arguments.
-interface Constructor<T> {
+export interface Constructor<T> {
     new (...args: any[]): T;
 }
 

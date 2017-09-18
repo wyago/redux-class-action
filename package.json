@@ -1,24 +1,12 @@
 {
   "name": "redux-class-action",
   "version": "1.0.0",
-  "main": "dist/redux-class-action.js",
-  "module": "dist/redux-class-action.esmodule.js",
-  "peerDependencies": {
-    "redux": "3.x"
-  },
+  "main": "dist/main.js",
   "devDependencies": {
-    "rollup": "0.46.0",
-    "rollup-plugin-commonjs": "8.0.2",
-    "rollup-plugin-node-resolve": "3.0.0",
-    "rollup-plugin-typescript": "0.8.1",
-    "source-map-support": "^0.4.18",
     "typescript": "2.5.2"
   },
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "test": "node test/test.js",
-    "pretest": "npm run build"
+    "build": "tsc"
   },
   "files": [
     "dist"
